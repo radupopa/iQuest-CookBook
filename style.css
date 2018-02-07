@@ -1,0 +1,730 @@
+*, html {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #f9f9f9;
+	margin: 0;
+	margin-bottom: 50px;
+	text-align: center;
+	font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 100%;
+}
+
+header h1 {
+	background-color: #d94e44;
+	width: 100%;
+	margin: 0;
+	float: top;
+	color: white;
+	text-align: center;
+	font-size: 140%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+#nav {
+	width: 100%;
+	border-collapse: collapse;
+	margin: 0;
+	color: #db4d3f;
+	text-align: center;
+	height: 65px;
+	background-color: white;
+	font-size: 110%;
+}
+
+#nav td {
+	text-align: center;
+	width: 50%;
+}
+#nav tr {
+	border-bottom: 2px solid #d6d4d4;
+}
+
+#new {
+	border-right: 2px solid #d6d4d4;
+	height: 100%;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+
+.section {
+	background-color: #db4d3f;
+	color: white;
+	width: 100%;
+	float: left;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	text-indent: 8px;
+	text-align: left;
+	font-size: 120%;	
+}
+
+fieldset {
+	margin: 0;
+	width: 100%;
+	border: 0px;
+	background-color: #f6f4f4;
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+}
+
+#recipe {
+	text-align: center;
+	margin: auto;
+	padding-top: 8px;
+}
+
+#about {
+	text-align: left;
+}
+
+#aboutdetails {
+	width: 100%;
+	padding-top: 25px;
+	padding-bottom: 10px;
+	font-size: 95%;
+	margin-left: 0px;
+	float: left;
+	text-align: left;
+	font-weight: 500;
+}
+
+input[type=text] {
+	border: 0px;
+	border-radius: 2px;
+}
+
+textarea {
+	border: 0px;
+	border-radius: 2px;
+}
+
+select {
+	border: 0px;
+	border-radius: 5px;
+	height: 30px;
+}
+
+#selectrecipe {
+	border: 1px solid;
+	border-radius: 5px;
+	border-color: #f9f9f9;
+}
+
+#ingredients {
+	list-style: none;
+	margin-left: 0;
+	padding-left: 0;
+	text-align: left;
+	padding-bottom: 20px;
+}
+
+#ingredients li {
+	padding-left: 2em;
+	text-indent: 1em;
+}
+
+#ingredients li:before {
+	content: "»";
+	padding-right: 5px;
+	color: #db4d3f;
+}
+
+
+textarea {
+	height: 150px;
+}
+textarea::placeholder {
+	padding-top: 10px;
+	padding-left: 5px;
+}
+input[type=text] {
+	height: 40px;
+}
+input[type=text]::placeholder {
+	padding-left: 5px;
+}
+input[type=number]::placeholder {
+	padding-left: 5px;
+}
+select {
+	height: 40px;
+}
+
+#steppl {
+	margin-bottom: 15px;
+}
+
+#cancel {
+	height: 40px;
+	border: 1px solid;
+	border-color: #db4d3f;
+	border-radius: 2px;
+	background-color: white;
+	color: #db4d3f;
+	font-size: 130%;
+}
+
+#save {
+	margin-left:-5px;
+	height: 40px;
+	border: 1px solid;
+	border-color: #db4d3f;
+	background-color: #db4d3f;
+	color: white;
+	border-radius: 2px;
+	font-size: 130%;
+}
+
+
+@media screen and (min-width: 1000px) {
+	#brabout {
+		display: none;
+	}
+	#unit {
+		width: 120px;
+	}
+	#ingredients li {
+		padding-left: 3em;
+	}
+	#recipe {
+		width: 90%;
+		max-width: 1000px;
+	}
+	#submit {
+		list-style: none;
+		display: inline;
+		width: 1000px;
+	}	
+	#submit li {
+		display: inline;
+		padding-right: 0;
+		margin-left: 0;
+		padding-left: 0;
+		width: 1000px;
+	}	
+	#cancel {
+		width: 500px;
+	}
+
+	#save {
+		width: 500px;
+	}	
+	#addstepbutton {
+		background-color: white;
+		color: #db4d3f;
+		height: 30px;
+		border: 1px solid;
+		border-color: #db4d3f;
+		border-radius: 2px;
+		width: 95%;
+		float: none;
+		font-size: 130%;
+		height: 40px;
+	}
+	#steppl {
+		margin-left: 20px;
+		display: inline;
+		float: none;
+		width: 95%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	#steps {
+		float: left;
+		text-align: left;
+		padding-left: 50px;
+		padding-right: 30px;
+		padding-top: 7px;
+	}
+	#steps li {
+		padding-bottom: 5px;
+	}	
+	#selectingredients {
+		display: none;
+	}
+
+	#selectingredientslarge {
+		display: flex;
+		list-style: none;
+		float: none;
+		text-align: center;
+		width: 95%;
+		justify-content: space-between;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#selectingredientslarge li {
+		display: inline;
+		float: none;
+		text-align: center;
+		margin-top: auto;
+		margin-bottom: auto;
+	}
+	#qty {
+		width: 50px;
+		height: 40px;
+		border: 0;
+		border-radius: 2px;
+		padding-right: 10px;
+		margin-left: 0px;
+	}
+
+	#ingredientbutton {
+		font-size: 100%;
+		width: 32px;
+		background-color: white;
+		color: #db4d3f;
+		height: 40px;
+		border: 1px solid;
+		border-color: #db4d3f;
+		border-radius: 2px;
+	}	
+	#addingredient {
+		width: 400px;
+		height: 40px;
+		border: 0;
+		border-radius: 2px;
+	}	
+	#br {
+		display: none;
+	}
+	#aboutlist {
+		width: 95%;
+		display: flex;
+		justify-content: space-between;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#aboutlist li {
+		display: inline;
+		font-size: 90%;
+		font-weight: 450;
+	}
+	#aboutdetails {
+		padding-left: 30px;
+		padding-top: 25px;
+		padding-bottom: 10px;
+		font-size: 95%;
+		margin-left: 0px;
+		float: left;
+		text-align: left;
+		font-weight: 500;
+	}
+	#title {
+		width: 95%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	textarea {
+		width: 95%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media screen and (min-width: 700px) and (max-width: 999px) {
+	#brabout {
+		display: none;
+	}
+	#unit {
+		width: 120px;
+	}
+	#ingredients li {
+		padding-left: 3em;
+	}
+	#submit {
+		list-style: none;
+		display: inline;
+		width: 100%;
+	}	
+	#submit li {
+		display: inline;
+		padding-right: 0;
+		margin-left: 0;
+		padding-left: 0;
+		width: 95%;
+	}	
+	#cancel {
+		width: 45%;
+	}
+
+	#save {
+		width: 45%;
+	}	
+	#addstepbutton {
+		background-color: white;
+		color: #db4d3f;
+		height: 30px;
+		border: 1px solid;
+		border-color: #db4d3f;
+		border-radius: 2px;
+		width: 90%;
+		float: none;
+		font-size: 130%;
+		height: 40px;
+	}
+	#steppl {
+		margin-left: 20px;
+		display: inline;
+		float: none;
+		width: 90%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	#steps {
+		float: left;
+		text-align: left;
+		padding-left: 50px;
+		padding-right: 30px;
+		padding-top: 7px;
+	}
+	#steps li {
+		padding-bottom: 5px;
+	}	
+	#selectingredients {
+		display: none;
+	}
+
+	#selectingredientslarge {
+		display: flex;
+		list-style: none;
+		float: none;
+		text-align: center;
+		width: 90%;
+		justify-content: space-between;
+		margin-left: 5%;
+	}
+	#selectingredientslarge li {
+		display: inline;
+		float: none;
+		text-align: center;
+		margin-top: auto;
+		margin-bottom: auto;
+	}
+	#qty {
+		width: 50px;
+		height: 40px;
+		border: 0;
+		border-radius: 2px;
+		padding-right: 10px;
+		margin-left: 0px;
+	}
+	#ingredientbutton {
+		font-size: 100%;
+		width: 32px;
+		background-color: white;
+		color: #db4d3f;
+		height: 40px;
+		border: 1px solid;
+		border-color: #db4d3f;
+		border-radius: 2px;
+	}	
+	#addingredient {
+		width: 240px;
+		height: 40px;
+		border: 0;
+		border-radius: 2px;
+	}	
+	#recipe {
+		width: 90%;
+	}
+	#br {
+		display: none;
+	}
+	#aboutlist {
+		width: 90%;
+		display: flex;
+		justify-content: space-between;
+		margin-left: 5%;
+	}
+	#aboutlist li {
+		display: inline;
+		font-size: 90%;
+		font-weight: 450;
+	}
+	#aboutdetails {
+		padding-left: 30px;
+		padding-top: 25px;
+		padding-bottom: 10px;
+		font-size: 95%;
+		margin-left: 0px;
+		float: left;
+		text-align: left;
+		font-weight: 500;
+	}
+	#title {
+		width: 90%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	textarea {
+		width: 90%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media screen and (min-width: 500px) and (max-width: 699px) {
+	#brabout {
+		display: none;
+	}
+	#unit {
+		width: 100px;
+	}
+	#cancel {
+		width: 47.5%;
+	}
+
+	#save {
+		width: 47.5%;
+	}	
+	#submit {
+		list-style: none;
+		display: inline;
+		width: 100%;
+	}
+
+	#submit li {
+		display: inline;
+		padding-right: 0;
+		margin-left: 0;
+		padding-left: 0;
+		width: 95%;
+	}	
+	#addingredient {
+		width: 180px;
+		height: 40px;
+		border: 0;
+		border-radius: 2px;
+	}	
+	#addstepbutton {
+		background-color: white;
+		color: #db4d3f;
+		height: 30px;
+		border: 1px solid;
+		border-color: #db4d3f;
+		border-radius: 2px;
+		width: 95%;
+		float: none;
+		font-size: 130%;
+		height: 40px;
+	}
+	#steps {
+		float: left;
+		text-align: left;
+		padding-left: 40px;
+		padding-right: 20px;
+		padding-top: 7px;
+	}
+	#steps li {
+		padding-bottom: 5px;
+	}
+	#aboutlist {
+		width: 95%;
+		display: flex;
+		justify-content: space-between;
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+	#aboutlist li {
+		display: inline;
+		text-align: center;
+		float: none;
+		font-size: 90%;
+		font-weight: 450;
+		padding-left: 0px;
+	}
+	#br {
+		display: none;
+	}
+	#recipe {
+		width: 95%;
+	}
+	#aboutdetails {
+		padding-left: 10px;
+		padding-top: 25px;
+		padding-bottom: 10px;
+		font-size: 95%;
+		margin-left: 0px;
+		float: left;
+		text-align: left;
+		font-weight: 500;
+	}
+	#title {
+		width: 95%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	textarea {
+		width: 95%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#selectingredients {
+		display: none;
+	}
+
+	#selectingredientslarge {
+		display: flex;
+		justify-content: space-between;
+		list-style: none;
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+	#selectingredientslarge li {
+		display: inline;
+		float: none;
+		text-align: center;
+		margin: auto;
+	}
+	#qty {
+		width: 50px;
+		height: 40px;
+		border: 0;
+		border-radius: 2px;
+		padding-right: 10px;
+	}
+	#ingredientbutton {
+		font-size: 100%;
+		width: 32px;
+		background-color: white;
+		color: #db4d3f;
+		height: 40px;
+		border: 1px solid;
+		border-color: #db4d3f;
+		border-radius: 2px;
+	}
+}
+@media screen and (max-width: 499px) {
+	#brabout {
+		display: block;
+	}
+	#selectingredientslarge {
+		display: none;
+	}
+
+	input[type=text] {
+		width: 100%;
+	}
+	textarea {
+		width: 100%;
+	}
+	#qty {
+		width: 50px;
+		height: 40px;
+		border: 0;
+		border-radius: 2px;
+		padding-right: 10px;
+	}
+	#unit {
+		width: 60px;
+		padding-right: 10px;
+		height: 40px;
+		border: 0;
+		border-radius: 5px;
+	}
+	#addingredient {
+		width: 130px;
+		height: 40px;
+		border: 0;
+		border-radius: 2px;
+	}
+	#ingredientbutton {
+		font-size: 100%;
+		width: 32px;
+		background-color: white;
+		color: #db4d3f;
+		height: 40px;
+		border: 1px solid;
+		border-color: #db4d3f;
+		border-radius: 5px;
+	}
+	#addstepbutton {
+		background-color: white;
+		color: #db4d3f;
+		height: 30px;
+		border: 1px solid;
+		border-color: #db4d3f;
+		border-radius: 5px;
+		width: 100%;
+		float: left;
+		font-size: 130%;
+		height: 40px;
+	}
+	#aboutlist {
+		list-style: none;
+		display: inline;
+		text-align: left;
+		margin-left: 0px;
+		float: left;
+}
+
+	#aboutlist li {
+		display: inline-block;
+		text-align: left;
+		float: left;
+		font-size: 90%;
+		font-weight: 450;
+		padding-left: 0px;
+		padding-right: 40px;
+	}
+	#steps {
+		float: left;
+		text-align: left;
+		padding-left: 20px;
+		padding-top: 7px;
+	}
+	#steps li {
+		padding-bottom: 5px;
+	}	
+	#submit {
+		list-style: none;
+		display: inline;
+		width: 100%;
+	}
+
+	#submit li {
+		display: inline;
+		padding-right: 0;
+		margin-left: 0;
+		padding-left: 0;
+		width: 100%;
+	}
+	#cancel, #save {
+		width: 50%;
+		border-radius: 5px;
+	}
+	#selectingredients {
+		list-style: none;
+		float: none;
+		display: flex;
+		justify-content: space-between;
+		text-align: center;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#selectingredients li {
+		display: inline;
+		float: none;
+		text-align: center;
+	}
+}
+
